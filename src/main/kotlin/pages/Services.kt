@@ -10,9 +10,3 @@ class Services : RComponent<RProps, RState>() {
         }
     }
 }
-
-fun RBuilder.services(handler: RProps.() -> Unit) = child(Services::class) {
-    attrs {
-        handler()
-    }
-}

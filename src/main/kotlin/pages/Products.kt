@@ -10,9 +10,3 @@ class Products : RComponent<RProps, RState>() {
         }
     }
 }
-
-fun RBuilder.products(handler: RProps.() -> Unit) = child(Products::class) {
-    attrs {
-        handler()
-    }
-}

@@ -1,0 +1,129 @@
+.signup-form-wrapper {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.signup-form-content {
+    background: #f4f4f4;
+    width: 100%;
+    position: relative;
+    border-radius: 3px;
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+}
+
+.signup-close-btn {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.signup-form-content-left {
+    border-radius: 0 3px 3px 0;
+    position: relative;
+    background-color: #252e48;
+}
+
+.signup-form-content-right {
+    border-radius: 0 3px 3px 0;
+    position: relative;
+}
+
+#signup-img {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.signup-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form h1 {
+    font-size: 3rem;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 0.5rem;
+}
+
+.signup-form h5 {
+    font-size: 1rem;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 1rem;
+    color: red;
+}
+
+.signup-input {
+    display: block;
+    padding-left: 0.5rem;
+    outline: none;
+    border-radius: 2px;
+    border: none;
+    height: 4rem;
+    margin-bottom: 0.5rem;
+    width: 80%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.signup-input::placeholder {
+    color: #b1b1b1;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.signup-input-btn {
+    width: 80%;
+    height: 3rem;
+    border-radius: 2px;
+    background-color: darkblue;
+    outline: none;
+    border: none;
+    color: #f4f4f4;
+    font-size: 1rem;
+}
+
+.signup-input-btn:hover {
+    cursor: pointer;
+    background-color: #337AF1;
+    transition: all 0.4s ease-out;
+}
+
+@media screen and (max-width: 768px) {
+    .signup-form-content-left {
+        display: none;
+    }
+
+    .signup-form-content {
+        grid-template-columns: auto;
+        margin: 15% auto;
+        width: 70%;
+        height: 75%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .signup-form-content {
+        margin: 20% auto;
+        width: 90%;
+        height: 80%;
+    }
+}

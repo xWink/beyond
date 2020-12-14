@@ -13,9 +13,3 @@ class Home : RComponent<RProps, RState>() {
         }
     }
 }
-
-fun RBuilder.home(handler: RProps.() -> Unit) = child(Home::class) {
-    attrs {
-        handler()
-    }
-}

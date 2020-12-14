@@ -1,8 +1,8 @@
 package components
 
-import kotlinx.html.classes
 import react.*
 import react.dom.*
+import react.router.dom.routeLink
 
 private val heroSection = functionalComponent<RProps> {
     div("hero-container") {
@@ -19,15 +19,17 @@ private val heroSection = functionalComponent<RProps> {
             +"What are you waiting for?"
         }
         div("hero-btns") {
-            buttonComponent {
-                attrs.classes += "btns"
-                buttonStyle = "btn--outline"
-                buttonSize = "btn--large"
-                onClick = { console.log("Get Started") }
-                text = "GET STARTED"
+            routeLink(to = "/sign-up") {
+                buttonComponent {
+                    classes = "btns"
+                    buttonStyle = "btn--outline"
+                    buttonSize = "btn--large"
+                    onClick = { console.log("Get Started") }
+                    text = "GET STARTED"
+                }
             }
             buttonComponent {
-                attrs.classes += "btns"
+                classes += "btns"
                 buttonStyle = "btn--primary"
                 buttonSize = "btn--large"
                 onClick = { console.log("Watch Trailer") }

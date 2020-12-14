@@ -60,7 +60,7 @@ private val navbar = functionalComponent<RProps> {
                 }
             }
             if (button) {
-                routeLink(to = "sign-up") {
+                routeLink(to = "/sign-up") {
                     buttonComponent {
                         buttonStyle = "btn--outline"
                         buttonSize = "btn--medium"

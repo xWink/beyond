@@ -15,6 +15,7 @@ interface ButtonComponentProps : RProps {
     var buttonStyle: String?
     var buttonSize: String?
     var text: String?
+    var classes: String?
 }
 
 private val buttonComponent = functionalComponent<ButtonComponentProps> { props ->
@@ -23,6 +24,7 @@ private val buttonComponent = functionalComponent<ButtonComponentProps> { props 
         attrs.classes += "btn-mobile"
         attrs.classes += props.buttonStyle ?: ""
         attrs.classes += props.buttonSize ?: ""
+        attrs.classes += props.classes ?: ""
         attrs.onClickFunction = props.onClick
         attrs.type = ButtonType.button
         +(props.text ?: "")

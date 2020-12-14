@@ -2,8 +2,8 @@ plugins {
     id("org.jetbrains.kotlin.js") version "1.4.10"
 }
 
-group = "org.example"
-version = "1.0-SNAPSHOT"
+group = "io.github.xwink"
+version = "1.0"
 
 repositories {
     maven("https://kotlin.bintray.com/kotlin-js-wrappers/")
@@ -25,6 +25,8 @@ dependencies {
     // React Router DOM
     implementation("org.jetbrains:kotlin-react-router-dom:5.2.0-pre.129-kotlin-1.4.10")
     implementation(npm("react-router-dom", "5.2.0"))
+
+    implementation(npm("@egjs/react-flicking", "3.4.3"))
 }
 
 kotlin {
