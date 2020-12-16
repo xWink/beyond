@@ -69,7 +69,10 @@ private val signupForm = functionalComponent<RProps> {
                         attrs.value = "Sign Up"
                     }
                     attrs.onSubmitFunction = {
-                        if (!passwordsMatch(password, passwordConfirm)) {
+                        if (password.length < 6) {
+                            window.alert("Password must be at least 6 characters long")
+                            it.preventDefault()
+                        } else if (!passwordsMatch(password, passwordConfirm)) {
                             window.alert("Password does not match password confirmation")
                             it.preventDefault()
                         } else {
