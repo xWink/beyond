@@ -22,4 +22,4 @@ Use the `browserDevelopmentRun` or `run` Gradle task provided.
 
 <br>
 
-Inspired by [Brian Codex's Repository](https://github.com/briancodex/react-website-v1/tree/starter)
+Inspired by [Brian Codex's Repository](https://github.com/briancodex/react-website-v1)
